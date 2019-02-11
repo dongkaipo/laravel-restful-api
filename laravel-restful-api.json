@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "e8d8a4f4-be60-4e5e-a297-e2fdcc5e26e3",
+		"name": "laravel-restful-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "welcome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.laravel.test/test/welcome",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"test",
+								"welcome"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.laravel.test/users",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.laravel.test/users/1919380636",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"users",
+								"1919380636"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlkMGYwMTY1OWU3OGNhOTE2MTgwMTYwZWE1NzVlYzBlMzJhMzgwMjM5YzMzNWIzYTVhZWJkNmEzYmQwODMzYTRhN2QwZWRkYmJjZWEwYjE2In0.eyJhdWQiOiIyIiwianRpIjoiOWQwZjAxNjU5ZTc4Y2E5MTYxODAxNjBlYTU3NWVjMGUzMmEzODAyMzljMzM1YjNhNWFlYmQ2YTNiZDA4MzNhNGE3ZDBlZGRiYmNlYTBiMTYiLCJpYXQiOjE1NDk4ODk5NjQsIm5iZiI6MTU0OTg4OTk2NCwiZXhwIjoxNTgxNDI1OTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbIioiXX0.GPhoBJeraTlEMsigDFu7POvif_uWo5j359TgnSnM3d8gznprVodobSVUWemsLMDKnioITTyIKP0GwcW91TVvIM_SfG-dIes1ML48vKVUmHYM8asKXHSR4-P4Ci7UXhKzH_1grEsOyWOsCO7hNBD-n17j1atXjqtFh6lbjf_BkVPdI73jhQtxX-qfg5sy4XrpM2cJrvtRw1u3a8-gQQZfkT8K0pFs7ZerWfkVXsZPLDVaEe-9EY6aDpzRBhENu0rxaUstQ1CugwiknamcgAZsOO6XgTayQrdekP5OH_Kb8vexqdCFTmRzkjuoT9wHrHoGV9AWDW3BXYrbmyvUTYnPqGFveGSMps3kCRAZ2MgwdRDDOHxf5xmUEFEtI84ibRHfc2lr_4RPdeSK8C5TQ3xcHQwYE3tIbmP0Zfn416unf5x2GAuAlVFpg0WgDartibDL9yZW3qifm94GyfjIe8g23OYm1nCRBuR2o3pz2G-xWLbLsr5jSRNLWQbK7NvDgpV-M9_dA050bxvlnZYz0PeB-dNDrQ4cRTMzZm_NZ6MdIRVlb0_YnNQhWMi5p6KjFb0BupikcwT-61P1FopvYQIraZ5gaffPCDBMPnUdsifEiX5vXi3I-sUuw2juhyK6ZeIi-wUSHY7hLkLaMy1w7NCViNWOLpOsx248JlZq77nPraM",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.laravel.test/users/my",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"users",
+								"my"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "mTNUN7iUGhV0ciGxkrFllPN1IrWoJ168aiTnnyZv",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "*",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jack",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.laravel.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nickname",
+									"value": "Test",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "test",
+									"description": "required",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@test.com",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "15811111111",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "/upload/filename.png",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.laravel.test/users",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjlkMGYwMTY1OWU3OGNhOTE2MTgwMTYwZWE1NzVlYzBlMzJhMzgwMjM5YzMzNWIzYTVhZWJkNmEzYmQwODMzYTRhN2QwZWRkYmJjZWEwYjE2In0.eyJhdWQiOiIyIiwianRpIjoiOWQwZjAxNjU5ZTc4Y2E5MTYxODAxNjBlYTU3NWVjMGUzMmEzODAyMzljMzM1YjNhNWFlYmQ2YTNiZDA4MzNhNGE3ZDBlZGRiYmNlYTBiMTYiLCJpYXQiOjE1NDk4ODk5NjQsIm5iZiI6MTU0OTg4OTk2NCwiZXhwIjoxNTgxNDI1OTY0LCJzdWIiOiIxIiwic2NvcGVzIjpbIioiXX0.GPhoBJeraTlEMsigDFu7POvif_uWo5j359TgnSnM3d8gznprVodobSVUWemsLMDKnioITTyIKP0GwcW91TVvIM_SfG-dIes1ML48vKVUmHYM8asKXHSR4-P4Ci7UXhKzH_1grEsOyWOsCO7hNBD-n17j1atXjqtFh6lbjf_BkVPdI73jhQtxX-qfg5sy4XrpM2cJrvtRw1u3a8-gQQZfkT8K0pFs7ZerWfkVXsZPLDVaEe-9EY6aDpzRBhENu0rxaUstQ1CugwiknamcgAZsOO6XgTayQrdekP5OH_Kb8vexqdCFTmRzkjuoT9wHrHoGV9AWDW3BXYrbmyvUTYnPqGFveGSMps3kCRAZ2MgwdRDDOHxf5xmUEFEtI84ibRHfc2lr_4RPdeSK8C5TQ3xcHQwYE3tIbmP0Zfn416unf5x2GAuAlVFpg0WgDartibDL9yZW3qifm94GyfjIe8g23OYm1nCRBuR2o3pz2G-xWLbLsr5jSRNLWQbK7NvDgpV-M9_dA050bxvlnZYz0PeB-dNDrQ4cRTMzZm_NZ6MdIRVlb0_YnNQhWMi5p6KjFb0BupikcwT-61P1FopvYQIraZ5gaffPCDBMPnUdsifEiX5vXi3I-sUuw2juhyK6ZeIi-wUSHY7hLkLaMy1w7NCViNWOLpOsx248JlZq77nPraM",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nickname",
+									"value": "Jack",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jack",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "/upload/filename.png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.laravel.test/users/2116122697",
+							"protocol": "http",
+							"host": [
+								"api",
+								"laravel",
+								"test"
+							],
+							"path": [
+								"users",
+								"2116122697"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
