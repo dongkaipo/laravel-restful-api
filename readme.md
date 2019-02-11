@@ -62,4 +62,4 @@ php artisan db:seed
 php artisan passport:install
 ```
 
-9. Import postman file from `laravel-restful-api.json`, configure by your `url` to visit `test/welcome`
+9. Import postman file from `laravel-restful-api.json`, configure by your `url`,`oauth client info` to visit `test/welcome`
