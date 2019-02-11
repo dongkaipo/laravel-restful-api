@@ -25,7 +25,7 @@ composer update
 3. Copy the `.env.example` file and configure with your environment
 
 ```bash
-copy .env.example .env
+cp .env.example .env
 ``` 
 
 4. Generate `APP_KEY` in `.env` file
@@ -62,4 +62,4 @@ php artisan db:seed
 php artisan passport:install
 ```
 
-9. Import postman file from `laravel-restful-api.json`
+9. Import postman file from `laravel-restful-api.json`, configure by your `url` to visit `test/welcome`
