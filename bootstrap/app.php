@@ -10,6 +10,7 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
+require __DIR__ . '/helpers.php';
 
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
