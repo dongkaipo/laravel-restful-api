@@ -48,12 +48,12 @@ class UserController extends Controller
     {
         $user = Auth::guard('api')->user();
         $payload = $request->all();
-        array_only($payload, [
+        $paylod = array_only($payload, [
             'nickname',
             'avatar'
         ]);
         try {
-            $user->update($request->all());
+            $user->update($payload);
         } catch (Exception $exception) {
             Log::error($exception);
             return $this->response->errorInternal('Server internal error');
